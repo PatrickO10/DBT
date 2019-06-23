@@ -9,9 +9,12 @@ function App() {
   return (
     <div className="container-fluid">
       <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/skills" component={SkillsPage} />
+        <Route exact path={process.env.PUBLIC_URL + "/"} component={HomePage} />
+        <Route path={process.env.PUBLIC_URL + "/about"} component={AboutPage} />
+        <Route
+          path={process.env.PUBLIC_URL + "/skills"}
+          component={SkillsPage}
+        />
         <Route component={PageNotFound} />
       </Switch>
     </div>
