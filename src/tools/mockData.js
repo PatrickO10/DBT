@@ -20,7 +20,7 @@ const skills = [
     title: "Distress Tolerance Skills",
     slug: "distress-tolerance",
     description:
-      "Manage interpersonal conflicts effectively and maintain and improve relationships with other people.",
+      "Learn to tolerate and survive crisis situations without making things worse",
     category: [
       "TIPP: Temperature. Intense exercise. Progressive muscle relaxation. Paced breathing.",
       "Distract: Wise Mind ACCEPTS Activities. Contributing. Comparisons. Emotions. Pushing away. Thoughts. Sensations.",
@@ -64,7 +64,7 @@ const skills = [
     title: "Interpersonal Effectiveness Skills",
     slug: "interpersonal-effectiveness",
     description:
-      "Learn to tolerate and survive crisis situations without making things worse",
+      "Manage interpersonal conflicts effectively and maintain and improve relationships with other people.",
     category: [
       "Objective effectiveness: DEAR MAN: Describe, Express, Assert, Reinforce, Mindful, Appear confident, Negotiate.",
       "Relationship effectiveness: GIVE: Gentle, Interested, Validation, Easy manner.",
