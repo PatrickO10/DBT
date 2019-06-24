@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function SkillPage(props) {
   return (
     <div>
-      <Link to="/skills">Skills</Link>
+      <Link to={process.env.PUBLIC_URL + "/skills"}>Skills</Link>
       <h1>{props.skill.title}</h1>
       <ul>
         {props.skill.category.map((cat, i) => (
