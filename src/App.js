@@ -6,10 +6,12 @@ import SkillsPage from "../src/components/skills/SkillsPage";
 import PageNotFound from "../src/components/PageNotFound";
 import skills from "./tools/mockData";
 import SkillPage from "../src/components/skills/SkillPage";
+import Header from "../src/components/common/Header";
 
 function App() {
   return (
     <div className="container-fluid">
+      <Header />
       <Switch>
         <Route exact path={process.env.PUBLIC_URL + "/"} component={HomePage} />
         <Route path={process.env.PUBLIC_URL + "/about"} component={AboutPage} />
