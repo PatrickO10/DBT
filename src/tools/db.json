@@ -1,0 +1,24 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "title": "Core Mindfulness Skills",
+      "slug": "core-mindfulness"
+    },
+    {
+      "id": 2,
+      "title": "Distress Tolerance Skills",
+      "slug": "distress-tolerance"
+    },
+    {
+      "id": 3,
+      "title": "Emotion Regulation Skills",
+      "slug": "emotion-regulation"
+    },
+    {
+      "id": 4,
+      "title": "Interpersonal Effectiveness Skills",
+      "slug": "interpersonal-effectiveness"
+    }
+  ]
+}

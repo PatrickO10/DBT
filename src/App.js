@@ -4,6 +4,8 @@ import HomePage from "../src/components/home/HomePage";
 import AboutPage from "../src/components/about/AboutPage";
 import SkillsPage from "../src/components/skills/SkillsPage";
 import PageNotFound from "../src/components/PageNotFound";
+import skills from "./tools/mockData";
+import SkillPage from "../src/components/skills/SkillPage";
 
 function App() {
   return (
@@ -13,8 +15,15 @@ function App() {
         <Route path={process.env.PUBLIC_URL + "/about"} component={AboutPage} />
         <Route
           path={process.env.PUBLIC_URL + "/skills"}
-          component={SkillsPage}
+          component={props => <SkillsPage {...props} skills={skills} />}
         />
+        {skills.skills.map(skill => (
+          <Route
+            key={skill.id}
+            path={process.env.PUBLIC_URL + "/" + skill.slug}
+            component={props => <SkillPage {...props} skill={skill} />}
+          />
+        ))}
         <Route component={PageNotFound} />
       </Switch>
     </div>
