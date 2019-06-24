@@ -18,8 +18,13 @@ code {
 
 .main-skills {
   margin: 10px;
+  font-size: 28px;
 }
 
 li {
   list-style: none;
+  font-size: 38px;
+  margin: 10px;
+  border: 3px solid black;
+  padding: 10px;
 }

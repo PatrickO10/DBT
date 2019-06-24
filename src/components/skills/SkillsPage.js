@@ -12,12 +12,9 @@ function SkillsPage(props) {
       </header>
       <main className="row">
         {props.skills.skills.map(skill => (
-          <div key={skill.id} className="col-xs-4 main-skills">
+          <div key={skill.id} className="col main-skills">
             <Link to={skill.slug}>{skill.title}</Link>
-            <p>
-              This is all about some text to write so that it fills up the page
-              and I can get a sense of what to say and how long to say it
-            </p>
+            <p>{skill.description}</p>
           </div>
         ))}
       </main>
